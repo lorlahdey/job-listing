@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-dark-cyan: 180 29% 50%;
+  --bg-light-cyan: 180 52% 96%;
+  --filter-tab-light-cyan: 180 31% 95%;
+  --dark-cyan: 180 8% 52%;
+  --very-dark-cyan: 180 14% 20%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +22,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  color: hsl(var(--foreground-rgb));
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    ) */
+    /* rgb(var(--background-start-rgb)); */
 }
